@@ -1,0 +1,78 @@
+
+/* App.css */
+
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.game-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #39FF14;
+  text-shadow: 0 0 10px #39FF14;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #0f1a1f, #1a2a2e);
+  border: 2px solid #24e6f4;
+  border-radius: 55px;
+  font-size: 2.5rem;
+  color: #42e9f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #0b2527;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #b7ff00;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #39FF14;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
